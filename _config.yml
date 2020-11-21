@@ -13,6 +13,8 @@ l10n_default_lang: en
 l10n_language_labels:
   - label: English
     code: en
+  - label: Polish
+    code: pl
 kramdown:
   input: GFM
   hard_wrap: false
@@ -96,6 +98,23 @@ defaults:
 
   - scope:
       path: "docs/v4"
+      type: "pages"
+    values:
+      layout: docs-v4
+
+  -
+    scope:
+      path: "pl"
+      type: "pages"
+    values:
+      l10n-lang: pl
+      docs-v4:
+        - title: Zaczynamy
+          items:
+            - [/pl/docs/v4, Rozpocz&#281;cie]
+            - [/pl/docs/v4/start/installation.md, Instalacja]
+  - scope:
+      path: "pl/docs/v4"
       type: "pages"
     values:
       layout: docs-v4
@@ -305,19 +324,25 @@ defaults:
 t:
   blog:
     en: "Blog"
-  docs:
+    pl: "Blog"
+  user-guide:
     en: "User Guide"
+    pl: "Podr&#x0119;cznik U&#x017C;ytkownika"
   support:
     en: "Support"
+    pl: "Wsparcie"
   community:
     en: "Community"
+    pl: "Spo&#322;eczno&#347;&#263;"
   contribute:
     en: "Contribute"
+    pl: "Wsp&#x00F3;&#x0142;pracuj z nami"
   slim-version:
     en: "Slim Version"
+    pl: "Wersja Slim'a"
   documentation:
     en: "Documentation"
-  languages:
-    en: "Languages"
+    pl: "Dokumentacja"
   toggle-navigation:
     en: "Toggle Navigation"
+    pl: "Prze&#x0142;&#261;cz nawigację"
