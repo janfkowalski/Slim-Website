@@ -110,6 +110,7 @@ defaults:
       l10n-lang: pl
       docs-v4:
         - title: Zaczynamy
+          section: docs-v4-start
           items:
             - [/pl/docs/v4, Rozpocz&#281;cie]
             - [/pl/docs/v4/start/installation.md, Instalacja]
