@@ -343,6 +343,8 @@ t:
   documentation:
     en: "Documentation"
     pl: "Dokumentacja"
+  languages:
+    en: "Languages"
   toggle-navigation:
     en: "Toggle Navigation"
     pl: "Prze&#x0142;&#261;cz nawigację"
