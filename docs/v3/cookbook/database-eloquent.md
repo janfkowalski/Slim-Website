@@ -1,5 +1,6 @@
 ---
 title: Using Eloquent with Slim
+l10n-link: cookbook-v3-database_eloquent
 ---
 
 You can use a database ORM such as [Eloquent](https://laravel.com/docs/eloquent) to connect your SlimPHP application to a database.

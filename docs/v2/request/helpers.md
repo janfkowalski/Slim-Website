@@ -1,5 +1,6 @@
 ---
 title: Helpers
+l10n-link: request-v2-helpers
 ---
 The Slim application's request object provides several helper methods to fetch common HTTP request information:
 

@@ -1,5 +1,6 @@
 ---
 title: Content Types
+l10n-link: request-v2-content_type
 ---
 
 How to Deal with Content-Types

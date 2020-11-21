@@ -1,5 +1,6 @@
 ---
 title: Retrieving IP address
+l10n-link: cookbook-v3-ip_address
 ---
 
 The best way to retrieve the current IP address of the client is via middleware using

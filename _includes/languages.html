@@ -1,0 +1,58 @@
+{% if page.l10n-link != nil %}
+    {% if site.l10n_language_labels.size > 1 %}
+        {% comment %} Search for Page/Post with the current "l10n-link" value. {% endcomment %}
+        {% assign relevantPages=site.pages | where:"l10n-link", page.l10n-link %}
+        {% if relevantPages.size > 1 %}
+            <ul class="nav navbar-nav list-inline l10n-switch pull-right">
+                <li class="list-inline-item">
+                    <div class="dropdown">
+                        {% comment %} The menu label will be taken from the defaults language translation (_config.yml). {% endcomment %}
+                        <a class="dropdown-toggle" id="dropdownMenuButton" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display:block;margin-top:17px;margin-right:20px;">
+                            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                            <span class="text">{{ site.t['languages'][site.l10n_default_lang] }}</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                            {% for relevantPage in relevantPages %}
+                                {% if relevantPage.l10n-lang != nil %}
+                                    {% comment %} Language is declared in the current document. {% endcomment %}
+                                    {% assign relevantLanguage=site.l10n_language_labels | where:"code", relevantPage.l10n-lang | first %}
+
+                                    {% comment %} Check if currently iterated language is not the same with the currently displayed document. {% endcomment %}
+                                    {% if relevantPage.l10n-lang != page.l10n-lang %}
+                                        {% comment %} Currently displayed page and iterated page are in different languages. {% endcomment %}
+                                        <a  class="dropdown-item" href="{{ site.base-url }}{{ relevantPage.url }}">
+                                            <img src="{{ site.base-url }}/assets/images/flags/{{ relevantLanguage.code }}.png" alt="{{ relevantLanguage.code }}" />
+                                            <span> {{ relevantLanguage.label }}</span>
+                                        </a>
+                                    {% elsif relevantPage.l10n-lang == page.l10n-lang %}
+                                        {% comment %} Currently displayed page and iterated page have same language declared. {% endcomment %}
+                                        <div class="dropdown-item">
+                                            <img src="{{ site.base-url }}/assets/images/flags/{{ relevantLanguage.code }}.png" alt="{{ relevantLanguage.code }}" />
+                                            <span> {{ relevantLanguage.label }}</span>
+                                        </div>
+                                    {% endif %}
+                                {% else %}
+                                    {% comment %} Language is not declared. Assume the default language. {% endcomment %}
+                                    {% assign relevantLanguage=site.l10n_language_labels | where:"code", site.l10n_default_lang | first %}
+
+                                    {% if relevantPage.l10n-link == page.l10n-link and site.l10n_default_lang==currentLanguageCode %}
+                                        <div class="dropdown-item" href="#">
+                                            <img src="{{ site.base-url }}/assets/images/flags/{{ site.l10n_default_lang }}.png" alt="" />
+                                            <span> {{ relevantLanguage.label }}</span>
+                                        </div>
+                                    {% else %}
+                                        <a class="dropdown-item" href="{{ site.base-url }}{{ relevantPage.url }}">
+                                            <img src="{{ site.base-url }}/assets/images/flags/{{ site.l10n_default_lang }}.png" alt="" />
+                                            <span> {{ relevantLanguage.label }}</span>
+                                        </a>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endif %}
+    {% endif %}
+{% endif %}

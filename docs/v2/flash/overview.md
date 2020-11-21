@@ -1,5 +1,6 @@
 ---
 title: Overview
+l10n-link: flash-v2-overview
 ---
 <div class="alert alert-info">
     <strong>Heads Up!</strong> Flash messages require sessions. If you do not use the

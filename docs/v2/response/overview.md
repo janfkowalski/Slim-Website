@@ -1,5 +1,6 @@
 ---
 title: Overview
+l10n-link: response-v2-overview
 ---
 Each Slim application instance has one response object. The response object is an abstraction of your Slim application's
 HTTP response that is returned to the HTTP client. Although each Slim application includes a default response object,

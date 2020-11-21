@@ -1,5 +1,6 @@
 ---
 title: Modes
+l10n-link: configuration-v2-modes
 ---
 It is common practice to run web applications in a specific mode depending on the current state of the project.
 If you are developing the application, you will run the application in “development” mode; if you are testing the

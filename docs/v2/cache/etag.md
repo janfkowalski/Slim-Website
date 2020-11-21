@@ -1,3 +1,6 @@
+---
+l10n-link: cache-v2-etag
+---
 A Slim application provides built-in support for HTTP caching using ETags. An ETag is a unique identifier for a
 resource URI. When an ETag header is set with the Slim application's `etag()` method, the HTTP client will send
 an **If-None-Match** header with each subsequent HTTP request of the same resource URI. If the ETag value for the

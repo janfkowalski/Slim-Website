@@ -1,5 +1,6 @@
 ---
 title: Overview
+l10n-link: request-v2-overview
 ---
 Each Slim application instance has one request object. The request object is an abstraction of the current
 HTTP request and allows you to easily interact with the Slim application's environment variables. Although each

@@ -1,5 +1,6 @@
 ---
 title: Custom
+l10n-link: view-v2-custom
 ---
 A Slim application delegates rendering of templates to its view object. A custom view is a subclass
 of `\Slim\View` that implements this interface:

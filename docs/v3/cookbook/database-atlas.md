@@ -1,5 +1,6 @@
 ---
 title: Using Atlas 3 with Slim
+l10n-link: cookbook-v3-database_atlas
 ---
 
 This cookbook entry describes how to use the [Atlas 3](http://atlasphp.io) ORM

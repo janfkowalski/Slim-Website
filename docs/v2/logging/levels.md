@@ -1,5 +1,6 @@
 ---
 title: Levels
+l10n-link: logging-v2-levels
 ---
 
 <div class="alert alert-info">

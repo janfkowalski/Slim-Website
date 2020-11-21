@@ -1,5 +1,6 @@
 ---
 title: Custom
+l10n-link: routing-v2-custom
 ---
 ### One route, multiple HTTP methods
 

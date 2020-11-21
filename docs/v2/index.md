@@ -1,5 +1,6 @@
 ---
 title: Slim 2 Documentation
+l10n-link: index-v2
 ---
 # Slim Framework v2
 

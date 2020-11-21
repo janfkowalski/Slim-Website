@@ -1,5 +1,6 @@
 ---
 title: Rewriting
+l10n-link: routing-v2-rewrite
 ---
 I strongly encourage you to use a web server that supports URL rewriting; this will let you enjoy clean, human-friendly
 URLs with your Slim application. To enable URL rewriting, you should use the appropriate tools provided by your

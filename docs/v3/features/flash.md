@@ -1,5 +1,6 @@
 ---
 title: Flash Messages
+l10n-link: features-v3-flash
 ---
 
 ## Install

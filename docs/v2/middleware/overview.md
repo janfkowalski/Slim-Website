@@ -1,5 +1,6 @@
 ---
 title: Overview
+l10n-link: middleware-v2-overview
 ---
 The Slim Framework implements a version of the Rack protocol. As a result, a Slim application can have middleware
 that may inspect, analyze, or modify the application environment, request, and response before and/or after the

@@ -1,5 +1,6 @@
 ---
 title: Settings
+l10n-link: configuration-v2-settings
 ---
 ## mode
 

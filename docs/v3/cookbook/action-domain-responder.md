@@ -1,5 +1,6 @@
 ---
 title: Action-Domain-Responder with Slim
+l10n-link: cookbook-v3-action_domain_response
 ---
 
 In this post, I'll show how to refactor the Slim tutorial application to more closely follow the [Action-Domain-Responder](http://pmjones.io/adr) pattern.

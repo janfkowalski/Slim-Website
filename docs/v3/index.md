@@ -1,5 +1,6 @@
 ---
 title: Slim 3 Documentation
+l10n-link: index-v3
 ---
 
 <div class="alert alert-info">

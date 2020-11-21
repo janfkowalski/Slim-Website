@@ -1,5 +1,6 @@
 ---
 title: Defaults
+l10n-link: hooks-v2-defaults
 ---
 These are the default hooks always invoked in a Slim application.
 

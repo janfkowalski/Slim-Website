@@ -1,5 +1,6 @@
 ---
 title: Uploading files using POST forms
+l10n-link: cookbook-v3-uploading_files
 ---
 
 Files that are uploaded using forms in POST requests can be retrieved with the

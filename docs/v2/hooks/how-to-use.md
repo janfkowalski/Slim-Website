@@ -1,5 +1,6 @@
 ---
 title: How to use
+l10n-link: hooks-v2-how_to_use
 ---
 A callable is assigned to a hook using the Slim application’s `hook()` method:
 

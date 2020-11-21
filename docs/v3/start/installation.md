@@ -1,5 +1,6 @@
 ---
 title: Installation
+l10n-link: start-v3-installation
 ---
 
 ## System Requirements

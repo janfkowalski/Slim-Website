@@ -1,5 +1,6 @@
 ---
 title: How to write
+l10n-link: middleware-v2-hot_to_write
 ---
 Slim application middleware must subclass `\Slim\Middleware` and implement a public `call()` method. The `call()`
 method does not accept arguments. Middleware may implement its own constructor, properties, and methods. I encourage

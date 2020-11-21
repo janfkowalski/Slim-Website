@@ -1,5 +1,6 @@
 ---
 title: Method
+l10n-link: request-v2-method
 ---
 Every HTTP request has a method (e.g. GET or POST). You can obtain the current HTTP request method via the Slim
 application’s request object:

@@ -1,3 +1,6 @@
+---
+l10n-link: start-v2-get_started
+---
 # System Requirements
 
 * PHP >= 5.3.0
