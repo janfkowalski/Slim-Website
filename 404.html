@@ -8,3 +8,15 @@ permalink: /404.html
 # 404
 
 Page not found! :(
+
+<script>
+    var pathArray = window.location.pathname.split( '/' );
+    var pathLanguageCode = pathArray[1];
+    var languagesAvailable = {{ site.l10n_language_labels | jsonify }};
+    for (i in languagesAvailable) {
+        if(languagesAvailable[i].code===pathLanguageCode) {
+            window.location.replace('/'+pathLanguageCode+"{{page.permalink}}");
+            break;
+        }
+    }
+</script>
